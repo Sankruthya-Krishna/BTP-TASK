@@ -14,10 +14,12 @@
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1",
-    "@sap/cds-dk": "^7"
+    "@sap/cds-dk": "^7",
+    "@sap/ux-specification": "^1.120.10"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-laptop": "cds watch --open laptop/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "fiori": {
@@ -33,5 +35,8 @@
       },
       "auth": "xsuaa"
     }
-  }
+  },
+  "sapux": [
+    "app/laptop"
+  ]
 }
